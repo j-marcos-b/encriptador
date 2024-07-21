@@ -1,0 +1,227 @@
+:root {
+    --fuente: "Source Code Pro", monospace;
+    --color-fondo: #e8f5e9;
+    --color-primario: #1aa6a6;
+    --color-secundario: #a61b81;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente);
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--color-fondo);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    gap: 5%;
+}
+
+.header {
+    margin: 40px 0 0 0;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.container1 {
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+
+.container2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #fff;
+    padding-bottom: 10px;
+    border-radius: 32px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.containerImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen {
+    height: 300px;
+    border-radius: 32px;
+}
+
+.texto {
+    height: 80%;
+    width: 100%;
+    color: var(--color-primario);
+    font-size: 1.3rem;
+    resize: none;
+    background-color: var(--color-fondo);
+    border-color: var(--color-fondo);
+    outline: none;
+}
+
+.texto::placeholder {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+    color: var(--color-primario);
+}
+
+.indicacion {
+    height: 5%;
+    color: var(--color-secundario);
+}
+
+.botones {
+    height: 10%;
+}
+
+.containerText {
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: var(--color-primario);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.container1 p {
+    font-size: 0.8rem;
+}
+
+.emoji {
+    font-family: serif;
+}
+
+.container2 p {
+    font-size: 1rem;
+    color: var(--color-secundario);
+    font-weight: 400;
+    height: 10vh;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#btnEncriptar,
+#btnDesencriptar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    width: 140px;
+    height: 45px;
+    background-image: linear-gradient(to top, #d8d9db 0%, #fff 80%, #fdfdfd 100%);
+    border-radius: 30px;
+    border: 1px solid #8f9092;
+    transition: all 0.2s ease;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #606060;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(190, 190, 190),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+#btnEncriptar:hover:active,
+#btnDesencriptar:hover:active {
+    box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
+        0 -6px 4px #fefefe, inset 0 0 3px 3px #cecfd1;
+}
+
+#btnEncriptar:focus,
+#btnDesencriptar:focus {
+    box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
+        0 -6px 4px #fefefe, inset 0 0 3px 3px #cecfd1;
+}
+
+.botonCopiar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#copiar {
+    display: none;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    width: 140px;
+    height: 45px;
+    margin-bottom: 40px;
+    background-image: linear-gradient(to top, #d8d9db 0%, #fff 80%, #fdfdfd 100%);
+    border-radius: 30px;
+    border: 1px solid #8f9092;
+    transition: all 0.2s ease;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #606060;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(190, 190, 190),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+#copiar:hover:active {
+    box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
+        0 -6px 4px #fefefe, inset 0 0 3px 3px #cecfd1;
+}
+
+#copiar:focus {
+    box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
+        0 -6px 4px #fefefe, inset 0 0 3px 3px #cecfd1;
+}
+
+@media (max-width: 767px) {
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container1 {
+        height: 65%;
+    }
+
+    .container2 {
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        overflow: auto;
+    }
+
+    button {
+        transform: scale(80%);
+    }
+
+    #copiar {
+        margin-bottom:  60px;
+    }
+
+    .imagen {
+        display: none;
+    }
+}
