@@ -1,6 +1,6 @@
 :root {
     --fuente: "Source Code Pro", monospace;
-    --color-fondo: #e8f5e9;
+    --color-fondo: #e3f7e4;
     --color-primario: #1aa6a6;
     --color-secundario: #a61b81;
 }
@@ -20,10 +20,11 @@ body {
 
 .container {
     width: 90%;
+    height: 90vh;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr 50px;
     gap: 5%;
 }
 
@@ -45,6 +46,15 @@ body {
     padding-bottom: 10px;
     border-radius: 32px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pie {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    font-size: 0.7rem;
+    color: hsla(0, 0%, 0%, 0.5);
+    align-self: self-end;
+    margin-bottom: 10px;
 }
 
 .containerImagen {
