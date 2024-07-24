@@ -51,10 +51,13 @@ body {
 .pie {
     grid-column: 2/3;
     grid-row: 4/5;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color: hsla(0, 0%, 0%, 0.5);
     align-self: self-end;
     margin-bottom: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
 }
 
 .containerImagen {
@@ -231,5 +234,9 @@ h3 {
 
     .imagen {
         display: none;
+    }
+
+    .pie {
+        position: relative;
     }
 }
