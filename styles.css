@@ -80,6 +80,7 @@ body {
     background-color: var(--color-fondo);
     border-color: var(--color-fondo);
     outline: none;
+    border: none;
 }
 
 .texto::placeholder {
