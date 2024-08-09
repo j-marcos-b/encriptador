@@ -73,7 +73,7 @@ body {
 
 .texto {
     max-height: 80%;
-    min-height: 60%;
+    min-height: 70%;
     width: 100%;
     color: var(--color-primario);
     font-size: 1.3rem;
