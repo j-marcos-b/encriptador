@@ -102,7 +102,7 @@ body {
 
 .containerText {
     text-align: center;
-    max-height: 65vh;
+    max-height: 60vh;
     overflow-y: auto;
 }
 
