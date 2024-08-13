@@ -19,8 +19,7 @@ body {
 }
 
 .container {
-    width: 90%;
-    height: 65vh;
+    width: 90vw;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -42,12 +41,11 @@ body {
 .container2 {
     grid-column: 2/3;
     grid-row: 2/3;
-    background-color: #fff;
-    padding-bottom: 10px;
-    border-radius: 32px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    min-height: 68vh;
-    max-height: 40vh;
+    background-color: var(--color-fondo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .pie {
@@ -69,14 +67,13 @@ body {
 }
 
 .imagen {
-    height: 300px;
-    border-radius: 32px;
+    height: 290px;
 }
 
 .texto {
-    max-height: 60vh;
-    min-height: 60vh;
-    width: 100%;
+    max-height: 60%;
+    min-height: 60%;
+    width: 70%;
     color: var(--color-primario);
     font-size: 1.3rem;
     resize: none;
@@ -93,6 +90,11 @@ body {
     color: var(--color-primario);
 }
 
+.indicacion-botones {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
 .indicacion {
     height: 5%;
     color: var(--color-secundario);
@@ -104,8 +106,6 @@ body {
 
 .containerText {
     text-align: center;
-    max-height: 65vh;
-    max-width: 50vw;
     overflow-y: auto;
     overflow-x: hidden; 
     word-wrap: break-word; 
@@ -224,8 +224,13 @@ h3 {
         height: 65%;
     }
 
+    .texto {
+        min-height: 60vh;
+        max-height: 60vh;
+    }
+
     .container2 {
-        height: 40%;
+        min-height: 40vh;
         display: flex;
         justify-content: center;
         align-items: center;
