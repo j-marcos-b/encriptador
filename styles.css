@@ -46,6 +46,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 45vw;
 }
 
 .pie {
@@ -73,7 +74,7 @@ body {
 .texto {
     max-height: 60%;
     min-height: 60%;
-    width: 70%;
+    width: 45vw;
     color: var(--color-primario);
     font-size: 1.3rem;
     resize: none;
@@ -228,10 +229,13 @@ h3 {
     .texto {
         min-height: 60vh;
         max-height: 60vh;
+        width: 90vw;
+        text-align: center;
     }
 
     .container2 {
         min-height: 40vh;
+        width: 90vw;
         display: flex;
         justify-content: center;
         align-items: center;
